@@ -21,8 +21,6 @@ HTML / CSS / Bootstrap
 
 SQL Server
 
-Entity Framework (si aplica)
-
 ✅ Funcionalidades principales
 Registro de reclamos/incidencias.
 
@@ -49,6 +47,4 @@ Incorporar logs o métricas internas.
 
 Refactorizar código para hacerlo más mantenible.
 
-🤝 Trabajo individual
-Este proyecto fue desarrollado individualmente, abordando todas las capas: datos, lógica de negocio y presentación web.
 
