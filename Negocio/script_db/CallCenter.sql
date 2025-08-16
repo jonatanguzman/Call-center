@@ -72,9 +72,9 @@ Apellido varchar(50) not null,
 Email varchar(80) not null)
 go
 insert into PERSONAS values 
-('Bart','Simpson','bartsimpson@gmail.com'),
-('Homero','Thompson','homerothompson@hotmail.com'),
-('Jony','Bocacerrada','jonybocacerrada@yahoo.com.ar'),
+('Administrador','Test','administrador@test.com'),
+('Supervisor','Test','supervisor@test.com'),
+('Operador','Test','operador@test.com.ar'),
 ('Juan', 'Pérez', 'juan.perez@email.com'),
 ('María', 'González', 'maria.gonzalez@email.com'),
 ('Carlos', 'Rodríguez', 'carlos.rodriguez@email.com'),
@@ -166,9 +166,9 @@ foreign key (TipoUsuario) references TIPOS_USUARIOS(IdTipoUsuario)
 GO
 set dateformat dmy
 INSERT INTO EMPLEADOS (IdPersona, UserPassword, TipoUsuario, FechaIngreso, ImagenPerfil, Activo) VALUES
-(1,'Milhouse1',3,'26-10-2024', NULL, 1),
-(2,'Springfield1',2,'26-10-2023', NULL, 1),
-(3,'Nodirenada1',1,'10-10-2020', NULL, 1),
+(1,'Administrador1',1,'26-10-2024', NULL, 1),
+(2,'Supervisor1',2,'26-10-2023', NULL, 1),
+(3,'Operador1',3,'10-10-2020', NULL, 1),
 (9, 'Clave123', 1, '2022-02-15', NULL, 1), 
 (15, 'Pass456', 3, '2023-03-10', NULL, 1), 
 (21, 'Segur789', 2, '2020-06-01', NULL, 1), 
@@ -246,7 +246,7 @@ Id bigint identity(1,1) not null primary key,
 Calle varchar(70) not null,
 Numero bigint not null,
 Localidad varchar(70) not null,
-CodPostal varchar(20) not null,
+CodPostal varchar(12) not null,
 IdProvincia bigint not null FOREIGN KEY REFERENCES PROVINCIAS (Id))
 go
 INSERT INTO CALLCENTER.dbo.DIRECCIONES (Calle, Numero, Localidad, CodPostal, IdProvincia) VALUES
@@ -425,7 +425,7 @@ go
 
 -- COMENTARIOS
 create table COMENTARIOS(
-id int not null identity(1,1),
+idComentario int not null identity(1,1),
 Cod_Incidencia int not null,
 Comentario varchar(200) not null,
 Fecha smalldatetime not null,
