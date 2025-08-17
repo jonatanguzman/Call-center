@@ -1,4 +1,4 @@
-📞 TP Integrador - Gestión de Reclamos (Laboratorio III - Aplicación Web)
+📝​ Gestión de Reclamos (Laboratorio III - Aplicación Web)
 Este proyecto fue desarrollado como parte del Trabajo Práctico Integrador de la materia Laboratorio de Computación III en la UTN. Se trata de una aplicación web completa que permite la gestión de reclamos e incidencias dentro de un call center.
 
 El sistema abarca funcionalidades clave como alta de reclamos, asignación, seguimiento, cierre, gestión de operadores y tipos de incidencias.
